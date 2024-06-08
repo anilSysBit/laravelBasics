@@ -15,3 +15,7 @@ use App\Http\Controllers\DemoController;
 */
 
 Route::get("/",[DemoController::class,'index']);
+
+// another type of import
+
+Route::get('/about','App\Http\Controllers\DemoController@about');
