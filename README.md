@@ -19,4 +19,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Using Single Action Controller in laravel
 
-    php artisam make::controller SingleActionController --invokable
+    php artisam make:controller SingleActionController --invokable
+
+## Resource Controller
+    php artisam make:controller ResourceController --resource
