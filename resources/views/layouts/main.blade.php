@@ -8,7 +8,7 @@
 </head>
 <body class="bg-slate-900">
     @include('layouts.header')
-    <div class="container p-10">
+    <div class="w-full min-h-svh">
         @yield('main-section')
     </div>
     @include('layouts.footer') 

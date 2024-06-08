@@ -1,9 +1,9 @@
 <header class="p-2  flex justify-between text-white sticky top-0">
     <span class="absolute left-0 top-0 w-full h-full blur-lg bg-slate-900 -z-10"></span>
         <ul class="flex place-items-center gap-x-5 w-1/2 ml-4">
-            <li>Home</li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li>Contact Us</li>
+            <li><a href="/register">Register</a></li>
             {{-- This is the laravel Comment --}}
         </ul>
         <ul class="flex justify-end place-items-center gap-x-5 w-1/2">

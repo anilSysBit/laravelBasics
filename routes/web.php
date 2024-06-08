@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\ResourceController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,5 @@ Route::get("/",[DemoController::class,'index']);
 
 Route::get("/about",SingleActionController::class);
 
-Route::resource('/resource',ResourceController::class);
+Route::get('/register',[LoginController::class,'index']);
+Route::post('/register',[LoginController::class,'register']);
