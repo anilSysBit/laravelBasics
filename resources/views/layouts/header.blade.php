@@ -2,7 +2,7 @@
     <span class="absolute left-0 top-0 w-full h-full blur-lg bg-slate-900 -z-10"></span>
         <ul class="flex place-items-center gap-x-5 w-1/2 ml-4">
             <li>Home</li>
-            <li>About Us</li>
+            <li><a href="/about">About Us</a></li>
             <li>Contact Us</li>
             {{-- This is the laravel Comment --}}
         </ul>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\SingleActionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,4 @@ Route::get("/",[DemoController::class,'index']);
 
 // another type of import
 
-Route::get('/about','App\Http\Controllers\DemoController@about');
+Route::get("/about",SingleActionController::class);
