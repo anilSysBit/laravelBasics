@@ -30,6 +30,14 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
     'password_confirmation -> 'required'
         
         or (with own name)
-        
+
     'passowrd'-> 'required'
     'password_confir -> 'required|same:password'
+
+
+
+## Database Confirmation
+
+    php artisan config:Cache
+    php artisan migrate
+
