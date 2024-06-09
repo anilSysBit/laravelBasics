@@ -23,5 +23,8 @@ Route::get("/",[DemoController::class,'index']);
 
 Route::get("/about",SingleActionController::class);
 
-Route::get('/register',[LoginController::class,'index']);
+Route::get('/login',[LoginController::class,'index']);
+Route::post('/login',[LoginController::class,'login']);
+
+Route::get('/register',[LoginController::class,'indexreg']);
 Route::post('/register',[LoginController::class,'register']);

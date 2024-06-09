@@ -3,6 +3,7 @@
         <ul class="flex place-items-center gap-x-5 w-1/2 ml-4">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
+            <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
             {{-- This is the laravel Comment --}}
         </ul>
