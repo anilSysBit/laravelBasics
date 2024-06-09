@@ -23,3 +23,13 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Resource Controller
     php artisam make:controller ResourceController --resource
+
+## Validation
+    (without namespace)
+    'password'-> 'required|confirmed'
+    'password_confirmation -> 'required'
+        
+        or (with own name)
+        
+    'passowrd'-> 'required'
+    'password_confir -> 'required|same:password'
