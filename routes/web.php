@@ -5,6 +5,7 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\LoginController;
+use App\Models\Customer;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,9 @@ Route::post('/login',[LoginController::class,'login']);
 
 Route::get('/register',[LoginController::class,'indexreg']);
 Route::post('/register',[LoginController::class,'register']);
+
+Route::get('/customer',function(){
+    $customers = Customer::all();
+   echo "<pre>";
+   print_r($customers->toArray());
+});

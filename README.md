@@ -36,8 +36,22 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 
 
-## Database Confirmation
+## Database Table
 
     php artisan config:Cache
     php artisan migrate
+    php artisan make:migration create_table_(name_table)
+    php artisan migrate:rollback
+    php artisan migrate:refresh
+    php artisan make:migration
+    php artisam make:migration add_columns_to_(table_name)
+
+
+## Model
+
+Create a model
+    php artisam make:modal ModelName
+
+run migration along with model
+    php artisan make:model Mdelname --migration
 
