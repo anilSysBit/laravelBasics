@@ -17,6 +17,7 @@
                         <th class="th_class">Date of Birth</th>
                         <th class="th_class">State</th>
                         <th class="th_class">Country</th>
+                        <th class="th_class">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +32,10 @@
                         <td class="td_class">{{$customer->dob}}</td>
                         <td class="td_class">{{$customer->state}}</td>
                         <td class="td_class">{{$customer->country}}</td>
+                        <td class="td_class">
+                            <a href="#" class="text-slate-500 hover:text-slate-400 mr-2"><i class="fas fa-eye"></i></a>
+                            <a href="{{route('customer.delete',['id'=> $customer->customer_id])}}" class="text-slate-500 hover:text-red-500"><i class="fas fa-trash-alt"></i></a>
+                        </td>
                     </tr>
                     @endforeach
                     <!-- Add more rows as needed -->

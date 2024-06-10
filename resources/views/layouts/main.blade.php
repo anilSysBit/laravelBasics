@@ -13,4 +13,5 @@
     </div>
     @include('layouts.footer') 
 </body>
+<script src="https://kit.fontawesome.com/6f2e95887d.js" crossorigin="anonymous"></script>
 </html>
