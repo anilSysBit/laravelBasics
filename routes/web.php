@@ -5,6 +5,7 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CustomerController;
 use App\Models\Customer;
 
 /*
@@ -30,8 +31,6 @@ Route::post('/login',[LoginController::class,'login']);
 Route::get('/register',[LoginController::class,'indexreg']);
 Route::post('/register',[LoginController::class,'register']);
 
-Route::get('/customer',function(){
-    $customers = Customer::all();
-   echo "<pre>";
-   print_r($customers->toArray());
-});
+Route::get('/customer',[CustomerController::class,'index'])->name('customer.create');
+Route::post('/customer',[CustomerController::class,'submit']);
+Route::get('/customer/view',[CustomerController::class,'view']);
