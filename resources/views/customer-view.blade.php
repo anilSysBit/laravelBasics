@@ -33,7 +33,7 @@
                         <td class="td_class">{{$customer->state}}</td>
                         <td class="td_class">{{$customer->country}}</td>
                         <td class="td_class">
-                            <a href="#" class="text-slate-500 hover:text-slate-400 mr-2"><i class="fas fa-eye"></i></a>
+                            <a href="{{route('customer.edit',['id'=> $customer->customer_id])}}" class="text-slate-500 hover:text-slate-400 mr-2"><i class="fas fa-eye"></i></a>
                             <a href="{{route('customer.delete',['id'=> $customer->customer_id])}}" class="text-slate-500 hover:text-red-500"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>

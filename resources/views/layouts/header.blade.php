@@ -9,6 +9,7 @@
             <li><a href="{{route('customer.create')}}">Create Customer</a></li>
             {{-- This is the laravel Comment --}}
         </ul>
+        
         <ul class="flex justify-end place-items-center gap-x-5 w-1/2">
             <!-- <li>Login / Logout</li> -->
              <li>Anil Wagle</li>
