@@ -37,3 +37,5 @@ Route::get('/customer/view',[CustomerController::class,'view']);
 Route::get('/customer/delete/{id}',[CustomerController::class,'destroy'])->name('customer.delete');
 Route::post('/customer/update/{id}',[CustomerController::class,'update'])->name('customer.update');
 Route::get('/customer/edit/{id}',[CustomerController::class,'edit'])->name('customer.edit');
+
+Route::get('/print',[DemoController::class,'index']);

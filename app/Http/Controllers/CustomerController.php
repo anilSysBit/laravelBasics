@@ -11,15 +11,15 @@ class CustomerController extends Controller
     public function create(){
         $url = url('/customer');
         $title = 'Customer Registration';
-        $data = compact('url','title');
+        $customer = null;
+        $data = compact('customer','url','title');
         return view("customer")->with($data);
     }
 
     // store the data on database from the view page
     public function submit(Request $request){
-        echo "<pre>";
-        print_r($request->all());
-
+        p($request->all());
+        die;
         $customer = new Customer;
         $customer->name = $request['name'];
         $customer->email = $request['email'];

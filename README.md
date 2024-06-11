@@ -55,3 +55,13 @@ Create a model
 run migration along with model
     php artisan make:model Mdelname --migration
 
+
+# Customer Helper
+
+To make custom herlper you should create a file with [name].php and inclue that file path on composer.json autoload:[files:[
+    "path/[name].php
+]];
+
+& run a command
+composer dump-autoload
+
