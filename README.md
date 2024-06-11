@@ -65,3 +65,6 @@ To make custom herlper you should create a file with [name].php and inclue that 
 & run a command
 composer dump-autoload
 
+## Mutator and Accessor
+
+data to be modified before storing to database

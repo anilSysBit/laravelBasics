@@ -18,10 +18,11 @@ class CustomerController extends Controller
 
     // store the data on database from the view page
     public function submit(Request $request){
-        p($request->all());
-        die;
+        // p($request->all());
+        // die;
         $customer = new Customer;
         $customer->name = $request['name'];
+        $customer->username = NULL;
         $customer->email = $request['email'];
         $customer->gender = $request['gender'];
         $customer->address = $request['address'];
