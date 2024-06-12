@@ -68,3 +68,17 @@ composer dump-autoload
 ## Mutator and Accessor
 
 data to be modified before storing to database
+
+
+## SESSION
+
+    $request -> session() ->get('key')
+    session('key')
+
+    $request -> session() -> all();
+    session()->all
+
+    $request -> session() ->put('key','value')
+    session(['key','value']);
+
+
