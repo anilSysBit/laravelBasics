@@ -82,3 +82,15 @@ data to be modified before storing to database
     session(['key','value']);
 
 
+## SoftDelete
+
+    use Illuminate\Database\Eloquent\SoftDeletes;
+
+    use SoftDeletes();
+    $table->softDeletes();
+        withTrashed()
+        onlyTraashed()
+        restore()
+        forceDelete()
+
+        
