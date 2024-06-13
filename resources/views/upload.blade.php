@@ -8,17 +8,18 @@
 <div class="flex items-center justify-center min-h-screen bg-slate-800">
     <div class="bg-white p-6 rounded shadow-md w-full max-w-sm">
         <form action="{{url('/upload')}}" method="POST" enctype="multipart/form-data">
+            @csrf
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="file-input">
                     Upload Image
                 </label>
-                <input id="file-input" type="file" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer focus:outline-none" accept="image/*">
+                <input id="file-input" name="image" type="file" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer focus:outline-none" accept="image/*">
             </div>
             <div id="preview-container" class="mt-4">
                 <img id="image-preview" class="hidden w-full h-auto rounded-md" />
             </div>
 
-            <button class="btn-primary">Submit</button>
+            <button class="btn-primary mt-1">Submit</button>
         </form>
     </div>
 </div>

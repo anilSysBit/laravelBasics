@@ -11,8 +11,7 @@ class DemoController extends Controller
         return view('home');
     }
 
-    public function upload(){
-        echo "<pre>";
-        print_r($request->all());
+    public function upload(Request $request){
+        echo $request->file('image')->store('uploads');
     }
 }
