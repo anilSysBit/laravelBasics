@@ -9,6 +9,9 @@
             <form class="search_box flex" action="">
                 <input type="search" name="search" placeholder="Search" value="{{$search}}" class="p-2 rounded text-slate-400 bg-slate-900 border border-slate-400 focus:outline-none">
                 <button class="btn-primary rounded ml-1">Search</button>
+                <a href="{{url("/customer/view")}}">
+                    <button class="btn-primary rounded ml-1 bg-blue-400" type="button">Reset</button>
+                </a>
             </form>
             <table class="min-w-full border-collapse  bg-transparent">
                 <thead>
@@ -45,6 +48,10 @@
                     <!-- Add more rows as needed -->
                 </tbody>
             </table>
+            <div class="row">
+                {{$customers->links()}}
+                
+            </div>
         </div>
     </div>
 
