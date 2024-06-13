@@ -12,7 +12,7 @@
         
         <ul class="flex justify-end place-items-center gap-x-5 w-1/2">
             <!-- <li>Login / Logout</li> -->
-             <li>Anil Wagle</li>
+             <li>@lang('lang.nav_name')</li>
             <li class="h-12 w-12 border rounded-full overflow-hidden border-gray-400 border-4 bg-white">
                 <img src="https://www.anilwagle.com.np/assets/myppimage-ad3a9990.jpg" alt="profile_image">
             </li>
