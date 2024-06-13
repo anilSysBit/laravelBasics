@@ -37,8 +37,13 @@ class CustomerController extends Controller
 
     // this page views the saved data from the database 
     public function view(Request $request){
-        $customers = Customer::all();
-        $data = compact('customers');
+        $search = $request['search'] ?? "";
+        if($search != ""){
+            $customers = Customer::where('name',"LIKE","$search%")->get();
+        }else{
+            $customers = Customer::all();
+        }
+        $data = compact('customers','search');
         return view('customer-view')->with($data);
     }
 
