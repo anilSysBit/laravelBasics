@@ -12,7 +12,7 @@ class DemoController extends Controller
     }
 
     public function upload(Request $request){
-        $filename = time().'anil'.$request->file('image')->getClientOriginalExtension();
+        $filename = time() .'anil.'. $request->file('image')->getClientOriginalExtension();
         echo $request->file('image')->storeAs('uploads',$filename);
     }
 }
