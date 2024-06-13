@@ -6,6 +6,10 @@
 @section('main-section')
 <div class="container mx-auto mt-10">
         <div class="overflow-x-auto">
+            <div class="search_box flex">
+                <input type="text" placeholder="Search" class="p-2 rounded text-slate-400 bg-slate-900 border border-slate-400 focus:outline-none">
+                <button class="btn-primary rounded ml-1">Search</button>
+            </div>
             <table class="min-w-full border-collapse  bg-transparent">
                 <thead>
                     <tr>

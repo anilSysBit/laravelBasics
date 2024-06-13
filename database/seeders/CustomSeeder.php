@@ -18,16 +18,18 @@ class CustomSeeder extends Seeder
     {
         //there are many 
         $faker = Faker::create();
-        $customer = new Customer;
-        $customer->name = $faker->name;
-        $customer->username = $faker->username;
-        $customer->email = $faker->email;
-        $customer->gender = "M";
-        $customer->address = $faker->address;
-        $customer->dob = now();
-        $customer->password = $faker->password;
-        $customer->state = $faker->state;
-        $customer->country = $faker->country;
-        $customer->save();
+        for($i=0; $i < 100; $i++){
+            $customer = new Customer;
+            $customer->name = $faker->name;
+            $customer->username = $faker->username;
+            $customer->email = $faker->email;
+            $customer->gender = "M";
+            $customer->address = $faker->address;
+            $customer->dob = now();
+            $customer->password = $faker->password;
+            $customer->state = $faker->state;
+            $customer->country = $faker->country;
+            $customer->save();
+        }
     }
 }
