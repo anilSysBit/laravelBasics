@@ -39,7 +39,7 @@ class CustomerController extends Controller
     public function view(Request $request){
         $search = $request['search'] ?? "";
         if($search != ""){
-            $customers = Customer::where('name',"LIKE","$search%")->get();
+            $customers = Customer::where('name',"LIKE","$search%")->orwhere('email','LIKE',"%$search%")->get();
         }else{
             $customers = Customer::all();
         }
