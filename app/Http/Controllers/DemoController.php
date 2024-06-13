@@ -12,6 +12,7 @@ class DemoController extends Controller
     }
 
     public function upload(Request $request){
-        echo $request->file('image')->store('uploads');
+        $filename = time().'anil'.$request->file('image')->getClientOriginalExtension();
+        echo $request->file('image')->storeAs('uploads',$filename);
     }
 }
