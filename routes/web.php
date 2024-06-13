@@ -39,3 +39,8 @@ Route::post('/customer/update/{id}',[CustomerController::class,'update'])->name(
 Route::get('/customer/edit/{id}',[CustomerController::class,'edit'])->name('customer.edit');
 
 Route::get('/print',[DemoController::class,'index']);
+
+Route::get("/upload",function(){
+    return view("upload");
+});
+Route::post('/upload',[DemoController::class,'upload']);

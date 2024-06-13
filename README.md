@@ -96,3 +96,5 @@ data to be modified before storing to database
 ## Laravel Collective Package
 
 <a href="https://laravelcollective.com/docs/6.x/html#installation">Laravel Collective Official site</a>
+
+
