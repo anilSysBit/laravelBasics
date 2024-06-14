@@ -22,4 +22,10 @@ class Customer extends Model
      public function getDobAttribute($value){
         return date("d-M-Y",strtotime($value));
      }
+
+     public function posts()
+     {
+         return $this->hasMany(Post::class, 'user_id', 'customer_id');
+     }
+
 }

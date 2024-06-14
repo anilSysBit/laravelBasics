@@ -49,7 +49,9 @@ Route::get("/upload",function(){
 Route::post('/upload',[DemoController::class,'upload']);
 
 
-Route::get('/{lang?}',function($lang=null){
-    App::setlocale($lang);
-    return view('home');
-});
+// Route::get('/{lang?}',function($lang=null){
+//     App::setlocale($lang);
+//     return view('home');
+// });
+
+Route::get('/related',[DemoController::class,'related']);
